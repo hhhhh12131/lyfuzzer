@@ -4,19 +4,30 @@ a demo combining libfuzzer with good GUI to detect C/C++code
 目前可检测的漏洞类型/源代码包括：
 1.按错误分类
 （1）dynamic-stack-buffer-overflow
+
 （2）heap-buffer-overflow
+
 （3）SEGV on unknown address
+
 （4）stack-buffer-overflow
+
 （5）memory-leaks
+
 2.程序员常犯错误
 （1）指针非法访问
+
 （2）数组访问越界
+
 3.头文件
 4.其他
 （1）包含各种常见类型参数的函数
+
 （2）嵌入式开发中的函数
+
 （3）计算机网络开发中的函数
+
 （4）正常的函数
+
 ### demo运行
 1.linux环境安装libfuzzer，详见[libfuzzer官方文档](https://github.com/Dor1s/libfuzzer-workshop "libfuzzer官方文档")
 2.终端中输入 `python3 main.py`即可。
